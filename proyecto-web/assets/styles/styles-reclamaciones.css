@@ -1,0 +1,255 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+
+/*header o cabecera*/
+#main-header {
+	background: #004AAD; 
+	color: white;
+	height: 90px;
+
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}	
+#main-header a {
+	    color: white;
+}
+
+/*Logo*/
+#logo-header {
+	float: left;
+	padding: 0px 0 0 20px;
+	text-decoration: none;
+    justify-content:center;
+    align-items:center;
+}
+
+#logo-header img{
+    width: 90px;
+}
+
+#logo-header:hover {
+	color: #0b76a6;
+}
+	
+#logo-header .site-name {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+	
+#logo-header .site-desc {
+	display: block;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #999;
+}
+
+nav {
+	float: right;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+}
+			
+nav ul li a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+			
+nav ul li a:hover {
+	background: #0b76a6;
+}
+
+/*Reclamaciones*/
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+    Border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.Section-Reclamaciones{
+    display: flex;
+    width: 90%;
+    height: calc(100% / 1.4 + 20px);
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.Reclamaciones{
+    max-width: 700px;
+    width: 100%;
+    background: #fffFFF;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.Reclamaciones .Titulo-C{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.Reclamaciones .Titulo-C::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100px;
+    background: #004AAD;
+}
+
+.Reclamaciones form .Detalles-Reclamaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .Detalles-Reclamaciones .input-box{
+    margin: 20px 0  12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.Detalles-Reclamaciones .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.Detalles-Reclamaciones .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
+}
+
+form .Detalles-Reclamaciones .textarea-box{
+    margin: 20px 0  12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.Detalles-Reclamaciones .textarea-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.Detalles-Reclamaciones .textarea-box textarea{
+    width: 100%;
+    min-width: 640px;
+    max-width: 640px;
+    height: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #004AAD;
+}
+
+form .button input:hover{
+    background: #efcb68;
+}
+
+.Detalles-Reclamaciones .input-box input:focus{
+    border-color: #efcb68;
+}
+
+section.bannerN{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1a3a2c, #5A993C,#EBB42C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1a3a2c , #5A993C,#EBB42C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 3rem 0;
+}
+
+/*footer*/
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+#main-footer p {
+	margin: 0;
+}
+	
+#main-footer a {
+	color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2; 
+    font-size: 1em;
+    line-height: 1.5em;
+        
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}

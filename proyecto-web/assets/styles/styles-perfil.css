@@ -1,0 +1,223 @@
+/* Reset y estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+    color: #666;
+    background: #f2f2f2; 
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 90px; /* Relleno superior igual a la altura de la cabecera */
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* Header o cabecera */
+#main-header {
+    background: #004AAD; 
+    color: white;
+    height: 90px;
+    width: 100%; /* Hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000; /* Asegura que el header esté siempre encima */
+}
+
+#main-header a {
+    color: white;
+}
+
+/* Logo */
+#logo-header {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo-header img {
+    width: 90px;
+}
+
+#logo-header:hover {
+    color: #0b76a6;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 90px;
+}
+            
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+            
+nav ul li a:hover {
+    background: #0b76a6;
+}
+
+/* Contenido principal */
+#main-content {
+    background: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 20px auto; /* Ajuste del margen superior para evitar el header */
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo del perfil */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #efcb68;
+    margin-bottom: 10px; /* Añadido margen inferior */
+}
+
+.edit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Añadido margen superior */
+}
+
+.edit-button:hover {
+    background-color: #efcb68;
+}
+
+.company-name,
+.description,
+.transport-routes {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    position: relative;
+}
+
+.company-name::before,
+.description::before,
+.transport-routes::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e9ecef;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.transport-routes {
+    display: flex;
+    flex-direction: column; /* Cambiado de row a column para evitar superposición */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.transport-types,
+.routes-schedules {
+    width: 100%; /* Ajustado a 100% para asegurar el acomodo correcto */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.transport-types::before,
+.routes-schedules::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #efcb68; 
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.details {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+#main-footer p {
+	margin: 0;
+}
+	
+#main-footer a {
+	color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2; 
+    font-size: 1em;
+    line-height: 1.5em;
+        
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+}
